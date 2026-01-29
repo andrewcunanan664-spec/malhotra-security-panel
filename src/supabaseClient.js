@@ -1,0 +1,8 @@
+import { createClient } from '@supabase/supabase-js'
+
+// Supabase konfigürasyonu - çalışan proje: tpimffjekmaqkyfxfqfc
+// NOT: .env'deki btcrgumaoqigwthbiumy projesi geçersiz/mevcut değil
+const supabaseUrl = 'https://tpimffjekmaqkyfxfqfc.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwaW1mZmpla21hcWt5ZnhmcWZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg0NTE4OTcsImV4cCI6MjA4NDAyNzg5N30.yVEgC6w8oOxGi6xk1Oe2afjuxl_b0TxXUEkIK2UzaC0'
+
+export const supabase = createClient(supabaseUrl, supabaseKey)
